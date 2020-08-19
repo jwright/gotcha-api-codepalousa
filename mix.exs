@@ -39,6 +39,7 @@ defmodule Gotcha.MixProject do
       {:phoenix_ecto, "~> 4.0"},
       {:ecto, ">= 3.4.4 and < 3.4.5"},
       {:ecto_sql, "~> 3.1"},
+      {:geocalc, "~> 0.5"},
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
