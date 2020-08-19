@@ -36,5 +36,8 @@ defmodule Gotcha.Arena do
       :longitude,
       :latitude
     ])
+    |> validate_length(:state, is: 2)
+    |> validate_inclusion(:latitude, -90..90)
+    |> validate_inclusion(:longitude, -180..180)
   end
 end
