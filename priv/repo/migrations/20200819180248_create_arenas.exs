@@ -4,7 +4,7 @@ defmodule Gotcha.Repo.Migrations.CreateArenas do
   def change do
     create table(:arenas) do
       add :location_name, :string
-      add :street_addres1, :string
+      add :street_address1, :string
       add :street_address2, :string
       add :city, :string
       add :state, :string
@@ -14,6 +14,5 @@ defmodule Gotcha.Repo.Migrations.CreateArenas do
 
       timestamps()
     end
-
   end
 end

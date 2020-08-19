@@ -7,7 +7,7 @@ defmodule Gotcha.Arena do
     field :location_name, :string
     field :longitude, :float
     field :state, :string
-    field :street_addres1, :string
+    field :street_address1, :string
     field :street_address2, :string
     field :zip_code, :string
 
@@ -19,7 +19,7 @@ defmodule Gotcha.Arena do
     arena
     |> cast(attrs, [
       :location_name,
-      :street_addres1,
+      :street_address1,
       :street_address2,
       :city,
       :state,
@@ -29,7 +29,7 @@ defmodule Gotcha.Arena do
     ])
     |> validate_required([
       :location_name,
-      :street_addres1,
+      :street_address1,
       :city,
       :state,
       :zip_code,
